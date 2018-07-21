@@ -1,0 +1,30 @@
+#!/bin/bash
+
+FLOOR=1
+RANGE=5
+number=0
+while [ "$number" -lt $FLOOR ]
+do
+   number=$RANDOM
+   let "number %= $RANGE"
+done
+
+case $number in
+   1)
+      color="-c \"colorscheme acme\""
+      ;;
+   2)
+      color="-c \"colorscheme acme-whitegray\""
+      ;;
+   3)
+      color="-c \"colorscheme acme-greenblack\""
+      ;;
+   4)
+      color="-c \"colorscheme acme-greengray\""
+      ;;
+   5)
+      color="-c \"colorscheme monochrome\""
+      ;;
+esac
+
+eval /usr/bin/gvim "$color" "${@}" > /dev/null 2>&1

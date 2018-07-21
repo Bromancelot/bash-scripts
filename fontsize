@@ -1,0 +1,5 @@
+#!/bin/bash
+ 
+FONTSIZE=${1:-13}
+ 
+xtermset -fn "xft:IBM 3270:pixelsize=$FONTSIZE:antialias=true"

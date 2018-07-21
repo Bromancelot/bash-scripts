@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo Compiling ${1}
+javac -cp .:/home/mikfer/bin/KarelJRobot.jar ${1}

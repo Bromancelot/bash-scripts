@@ -1,0 +1,28 @@
+#!/bin/bash
+ 
+FONTSIZE=${1:-11}
+ 
+FONT="xft:IBM 3270 Narrow:size=${FONTSIZE}:antialias=true"
+FLOOR=1
+RANGE=5
+number=0
+while [ "$number" -lt $FLOOR ]
+do
+  number=$RANDOM
+  let "number %= $RANGE"
+done
+case $number in
+    1)
+       color="-fg white -bg gray55 -cr white"
+       ;;
+    2)
+       color="-fg SpringGreen -bg gray55 -cr white"
+       ;;
+    3)
+       color="-fg green -bg black -cr white"
+       ;;
+    4)
+       color="-fg black -bg #ffffe5 -cr black"
+       ;;
+esac
+/usr/local/bin/urxvt -ls -sb -fn "$FONT" $color &

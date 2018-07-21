@@ -1,0 +1,3 @@
+#!/bin/bash
+#/bin/chromium-browser "${@}" > /dev/null 2>&1 &
+/opt/firefox/firefox "${@}" > /dev/null 2>&1 &

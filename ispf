@@ -1,0 +1,5 @@
+if [ $TERM = "xterm-256color" ]; then
+    /usr/local/bin/urxvt -cr white -fn "xft:IBM Plex Mono:size=10" -fg green -bg black -geometry 133x40  -e lspf "${@}" &
+else
+    the -m "${@}"
+fi

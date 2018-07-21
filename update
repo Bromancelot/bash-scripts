@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo ". . . do the clean"
+sudo yum clean all
+echo
+echo ". . . do the delete"
+echo
+sudo rm -rf /var/cache/yum
+echo
+echo ". . . rebuild the cache"
+echo
+sudo yum makecache
+echo
+echo ". . . find the fastest repos"
+echo
+sudo yum makecache fast
+echo
+echo ". . . update"
+echo
+sudo yum update
+echo
+echo ". . . upgrade"
+echo
+sudo yum upgrade

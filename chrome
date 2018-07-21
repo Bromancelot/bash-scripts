@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#/usr/bin/google-chrome-stable "${@}" > /dev/null 2>&1 &
+/usr/bin/chromium-browser "${@}" > /dev/null 2>&1 &
