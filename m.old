@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+FONT="Liberation Mono"
+
+/usr/local/bin/urxvt -bg "#ffffe5" -fg black -cr red -bd black -fn "xft:$FONT:size=12:antialias=false" +vb -sb +ls +bc -tn xterm-256color -title "Micro Editor" -e micro "${@}" &

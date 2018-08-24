@@ -1,0 +1,25 @@
+#!/bin/bash
+ 
+FLOOR=1
+RANGE=5
+number=0
+while [ "$number" -lt $FLOOR ]
+do
+  number=$RANDOM
+  let "number %= $RANGE"
+done
+case $number in
+    1)
+       STVER=stwg
+       ;;
+    2)
+       STVER=stsg
+       ;;
+    3)
+       STVER=stgb
+       ;;
+    4)
+       STVER=styb
+       ;;
+esac
+/usr/local/bin/$STVER &

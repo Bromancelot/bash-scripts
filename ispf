@@ -1,5 +1,10 @@
-if [ $TERM = "xterm-256color" ]; then
-    /usr/local/bin/urxvt -cr white -fn "xft:IBM Plex Mono:size=10" -fg green -bg black -geometry 133x40  -e lspf "${@}" &
-else
-    the -m "${@}"
-fi
+#!/bin/bash
+ 
+## -- Acme setup
+FONT="IBM Plex Mono Text:pixelsize=13:antialias=true"
+ 
+## -- 3270 setup
+#FONT="xft:IBM 3270:pixelsize=14:antialias=true"
+#FONT="xft:IBM 3270:size=13:antialias=true"
+ 
+/usr/local/bin/stgb -g 130x40 -f "$FONT" -t xterm-265color  -n Ispf -e lspf "${@}" &
