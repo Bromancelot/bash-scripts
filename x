@@ -1,14 +1,23 @@
 #!/bin/bash
  
-# -- use -t as "execute in this terminal"
-if [ $1 == '-t' ]; then
+## -- Acme setup
+#FONT="xft:Liberaton Mono:pixelsize=14:antialias=true"
+FONT="xft:IBM Plex Mono Text:pixelsize=14:antialias=true"
+ 
+## -- 3270 setup
+#FONT="xft:IBM 3270:pixelsize=16:antialias=true"
+#FONT="xft:IBM 3270:size=13:antialias=true"
+if [ $# -gt 0 ] && [ $1 == '-t' ]; then
     shift
     nthe "${@}"
+    exit
 else 
     if [ -v DISPLAY ]; then
-        FONT="xft:IBM 3270:pixelsize=15:charheight=20:antialias=true"
-        /usr/local/bin/urxvt -geometry 90x43 -cr white -uc -fn "$FONT" -name The -e nthe "${@}" &
+        exec /usr/local/bin/xterm -geometry 90x35 -fa "$FONT" -tn xterm-265color  -name The -e nthe "${@}" & 
     else
         nthe "${@}"
+        exit
     fi
 fi
+
+# /usr/local/bin/xthe "${@}"
