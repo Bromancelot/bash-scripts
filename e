@@ -2,7 +2,8 @@
 
 if [ -v XAUTHORITY ]
 then
-    emacs -T Emacs "${@}" &
+#    emacs -T Emacs "${@}" &
+    emacsclient -n -c "${@}"
 else
     emacs -nw "${@}"
 fi
