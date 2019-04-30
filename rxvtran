@@ -1,8 +1,13 @@
 #!/bin/bash
  
-FONTSIZE=${1:-11}
+FONTSIZE=${1:-12}
  
-FONT="xft:IBM 3270 Narrow:size=${FONTSIZE}:antialias=true"
+#FONT="xft:IBM Plex Mono Text:pixelsize=$FONTSIZE:antialias=true"
+#FONT="xft:IBM 3270:size=$FONTSIZE:antialias=false"
+FONT="xft:Terminus:size=$FONTSIZE:antialias=false"
+#FONT="xft:Anonymous Pro:size=$FONTSIZE:antialias=false"
+#FONT="xft:DejaVu Sans Mono:size=$FONTSIZE:antialias=true"
+GEOMETRY="90x30"
 FLOOR=1
 RANGE=5
 number=0
@@ -13,10 +18,10 @@ do
 done
 case $number in
     1)
-       color="-fg white -bg gray55 -cr white"
+       color="-fg white -bg #696969 -cr white"
        ;;
     2)
-       color="-fg SpringGreen -bg gray55 -cr white"
+       color="-fg SpringGreen -bg #696969 -cr white"
        ;;
     3)
        color="-fg green -bg black -cr white"
@@ -25,4 +30,4 @@ case $number in
        color="-fg black -bg #ffffe5 -cr black"
        ;;
 esac
-/usr/local/bin/urxvt -ls -sb -fn "$FONT" $color &
+exec /usr/local/bin/xterm -geometry "$GEOMETRY" -fa "$FONT" -title "Xterm" -ls +sb +bc -b 2 -w 0 $color &
