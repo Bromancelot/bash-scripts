@@ -1,0 +1,282 @@
+! setup for emacs in X
+#Emacs*geometry: 100x45
+
+! setup for xe (spf like) editor
+
+! Rofi setup
+!State              backg    foreg    bgalt    hlbg     hlfg
+rofi.color-normal:  #000000, #55ffff, #000000, #000000, #ffffff
+rofi.color-urgent:  #aaaaaa, #ff5555, #aaaaaa, #ffffff, #aa0000
+rofi.color-active:  #000000, #00ff00, #000000, #000000, #ffffff
+rofi.color-window:  #000000, #55ff55
+
+xext*background: Black
+xext*foreground: Green
+xext*cursorColor: blue
+xext*reverseVideo: false
+xext*scrollBar: true
+xext*reverseWrap: true
+xext*fullCursor: true
+xext*scrollTtyOutput: off
+xext*scrollKey: on
+xext*titleBar: false
+! setup for cwte editor
+cwtee*font: -misc-liberation mono-medium-r-normal--15-0-0-0-m-0-iso8859-1
+! setup for the Hessling editor: xthe
+the*Geometry: 78x55+140+0
+the*normalFont: -misc-liberation mono-medium-r-normal--15-0-0-0-m-0-iso8859-1
+the*lines:      55
+the*cols:       78
+the*pointer:    xterm
+the*pointerForeColor: white
+the*pointerBackColor: black
+!URxvt.font:	xft:liberation mono:size=10:antialias=true
+!URxvt.boldFont:	xft:liberation mono:bold:size=10:antialias=true
+URxvt.font:	xft:M +2m:size=10:antialias=true
+URxvt.boldFont:	xft:M +2m:bold:size=10:antialias=true
+ 
+XTerm*vt100.geometry: 80x25
+XTerm*cursorColor:   Red
+XTerm*Background:		#ffffea
+XTerm*Foreground:    black
+XTerm*fullCursor:    true
+XTerm*scrollBar:     true
+XTerm*saveLines:     1000
+XTerm*loginShell:    true
+XTerm*allowBoldFonts: true
+XTerm*boldMode:		true
+!XTerm*verBoldColors: 4
+ 
+XTerm*faceName: 	xft:Liberation Mono:antialias=true
+XTerm*faceSize:	    10
+XTerm*faceSize1:	6
+XTerm*faceSize2:	8
+XTerm*faceSize3:	12
+XTerm*faceSize4:	14
+XTerm*faceSize5:	20
+XTerm*faceSize6:	22
+ 
+XClock*foreground: red
+XClock*background: black
+XClock.Clock.hourColor: red
+XClock.Clock.minuteColor: red
+XClock.Clock.secondColor: red
+XClock.Clock.majorColor: red
+XClock.Clock.minorColor: red
+ 
+!#include "Xedit"
+ 
+!xedit*font:  -misc-liberation mono-medium-r-normal--11-0-0-0-m-0-iso8859-1
+!xedit*font:  lucidasanstypewriter-10
+xedit*font: 7x14
+!.xedit.paned.buttons.internalBorderColor: rgb:ffff/0000/0000
+!.xedit.paned.buttons.quit.foreground: rgb:5500/ff00/ff00
+!.xedit.paned.buttons.quit.background: rgb:0000/0000/0000
+!.xedit.paned.buttons.save.foreground: rgb:5500/ff00/ff00
+!.xedit.paned.buttons.save.background: rgb:0000/0000/0000
+!.xedit.paned.buttons.load.foreground: rgb:5500/ff00/ff00
+!.xedit.paned.buttons.load.background: rgb:0000/0000/0000
+!.xedit.paned.buttons.filename.textSink.foreground: rgb:5500/ff00/ff00
+!.xedit.paned.bc_label.foreground: rgb:5500/ff00/ff00
+!.xedit.paned.hpane.vpane.internalBorderColor: rgb:5500/ff00/5500
+!.xedit.paned.hpane.internalBorderColor: rgb:5500/ff00/5500
+!.xedit.fileMenu.menuLabel.foreground: rgb:5500/ff00/ff00
+!.xedit.fileMenu.menuLabel.background: rgb:0000/0000/0000
+!.xedit.fileMenu.*scratch*.foreground: rgb:5500/ff00/ff00
+!.xedit.fileMenu.*scratch*.background: rgb:0000/0000/0000
+!.xedit.optionsMenu.menuLabel.foreground: rgb:5500/ff00/ff00
+!.xedit.optionsMenu.menuLabel.background: rgb:0000/0000/0000
+!.xedit.editMenu.menuLabel.foreground: rgb:5500/ff00/ff00
+!.xedit.editMenu.menuLabel.background: rgb:0000/0000/0000
+!.xedit.paned.internalBorderColor: rgb:550/ff00/5500
+!.xedit.paned.messageWindow.textSink.foreground: rgb:5500/ff00/ff00
+!.xedit.paned.messageWindow.textSink.background: rgb:0000/0000/0000
+!.xedit.paned.hpane.vpane.formWindow.labelWindow.foreground: rgb:5500/ff00/ff00
+!.xedit.paned.hpane.vpane.formWindow.labelWindow.background: rgb:0000/0000/0000
+!!.xedit.paned.hpane.vpane.editWindow.textSink.foreground: rgb:5500/ff00/ff00
+!.xedit.paned.hpane.vpane.editWindow.textSink.background: rgb:0000/0000/0000
+!.xedit.paned.hpane.vpane.grip.foreground: rgb:0000/0000/0000
+! below is for selection high-lighting
+!.xedit.paned.hpane.vpane.editWindow.textSink.cursorColor: rgb:ff00/0000/0000
+ 
+! for Xcalendar
+!
+*showGrip:		False
+*calendar*internalBorderWidth: 0
+*input:		True
+*resize: False
+*resizable: True
+!*title: XCalendar v.4.0
+*dayEditor.title: Day Editor
+*helpWindow.title: XCalendar Help
+*Font: 8x13
+*FontList: 8x13
+ 
+!*helpFile:	/p/X11R6/lib/X11/xcalendar/xcalendar.hlp
+!*holidayFile:	/p/X11R6/lib/X11/xcalendar/xcalendar.hol
+ 
+*firstDay:		7
+ 
+! bitmaps
+ 
+! colors
+! Note: These may cause problems using the -rv option on monochrome displays
+ 
+*Background: lightgray
+*markBackground: gray
+*daynames*Background: lightgray
+*daynames.SUN*Foreground: Red
+*daynames.SAT*Foreground: Black
+*daynumbers*Foreground:   Black
+*daynumbers.1*Foreground: Red
+*daynumbers.8*Foreground: Red
+*daynumbers.15*Foreground: Red
+*daynumbers.22*Foreground: Red
+*daynumbers.29*Foreground: Red
+*daynumbers.36*Foreground: Red
+*helpButton*Background: slategray
+*helpButton*Foreground: White
+*quitButton*Background: slategray
+*quitButton*Foreground: White
+!*editorTitle*Background: lightgray
+!*editorTitle*Foreground: Black
+!*editorControls*Background: lightgray
+!*editorControls*Command.Background: slategray
+!*editorControls*Command.Foreground: White
+!*editorControls*XmPushButton.Background: slategray
+!*editorControls*XmPushButton.Foreground: White
+ 
+*setMarkBackground: True
+*markOnStartup: True
+*markCurrent: True
+*currentForeground: Blue
+*markHoliday: True
+*holidayForeground: Red
+*holiday*fontList: 6x13
+ 
+*BorderWidth:		2
+*calendar.borderWidth:	1
+*borderWidth: 0
+*date*borderWidth: 0
+*date*vertDistance: 5
+ 
+*date*font:				8x13bold
+*daynames*font:			8x13bold
+*dayEditor*editorTitle*font: 		8x13bold
+*helpWindow*editorTitle*font: 		8x13bold
+*date*fontList:			8x13bold
+*daynames*fontList:			8x13bold
+*dayEditor*editorTitle*fontList: 	8x13bold
+*helpWindow*editorTitle*fontList: 	8x13bold
+ 
+*helpButton*vertDistance: 12
+*quitButton*vertDistance: 12
+*editorTitle*vertDistance: 5
+ 
+*editorControls*doneButton*label: Done
+*editorControls*saveButton*label: Save
+*editorControls*clearEntry*label: Clear Entry
+*doneButton*labelString: Done
+*saveButton*labelString: Save
+*clearEntry*labelString: Clear Entry
+ 
+*helpWindow*editorTitle*label: Help
+*helpWindow*editorTitle*labelString: Help
+*helpWindow*rows: 15
+*helpWindow*columns: 80
+*rows:7
+*columns: 30
+ 
+*dayEditor*Paned*editor.width: 300
+*dayEditor*Paned*editor.height: 150
+*helpWindow*Paned*editor.width: 600
+*helpWindow*Paned*editor.height: 350
+ 
+*bcontrols*borderWidth: 0
+*prev*highlightThickness: 0
+*succ*highlightThickness: 0
+ 
+*prevday*highlightThickness: 0
+*succday*highlightThickness: 0
+*daybuttons*borderWidth: 0
+ 
+*Scrollbar.borderWidth: 1
+*Text*scrollVertical: whenNeeded
+*scrollHorizontal: False
+*helpWindow*scrollHorizontal: True
+*holiday*cursorPositionVisible: False
+*holiday*displayCaret: False
+*helpWindow*cursorPositionVisible: False
+*helpWindow*displayCaret: False
+ 
+!! Keyboard accelerators for Athena version
+ 
+*Box*doneButton*accelerators: #override \\n\\
+	Meta<Key>q: set() notify() reset() \\n
+*Box*saveButton*accelerators: #override \\n\\
+	Meta<Key>s: set() notify() reset() \\n
+*Box*clearEntry*accelerators: #override \\n\\
+	Meta<Key>c: set() notify() reset() \\n
+ 
+*Form*prevday*accelerators: #override \\n\\
+	Meta<Key>p: set() notify() reset() \\n
+*Form*succday*accelerators: #override \\n\\
+	Meta<Key>n: set() notify() reset() \\n
+ 
+*Form*prev*accelerators: #override \\n\\
+	<Key>p: set() notify() reset() \\n
+*Form*succ*accelerators: #override \\n\\
+	<Key>n: set() notify() reset() \\n
+*Form*quitButton*accelerators: #override \\n\\
+	<Key>q: set() notify() \\n
+ 
+ 
+! Motif text translations to make it work like emacs
+ 
+*XmText.translations: #override\\n\\
+Ctrl <Key>b:            backward-character()\\n\\
+Alt <Key>b:             backward-word()\\n\\
+Meta <Key>b:            backward-word()\\n\\
+Shift Alt <Key>b:       backward-word(extend)\\n\\
+Shift Meta <Key>b:      backward-word(extend)\\n\\
+Alt <Key>[:             backward-paragraph()\\n\\
+Meta <Key>[:            backward-paragraph()\\n\\
+Shift Alt <Key>[:       backward-paragraph(extend)\\n\\
+Shift Meta <Key>[:      backward-paragraph(extend)\\n\\
+Alt <Key><:             beginning-of-file()\\n\\
+Meta <Key><:            beginning-of-file()\\n\\
+Ctrl <Key>a:            beginning-of-line()\\n\\
+Shift Ctrl <Key>a:      beginning-of-line(extend)\\n\\
+Ctrl <Key>osfInsert:    copy-clipboard()\\n\\
+Shift <Key>osfDelete:   cut-clipboard()\\n\\
+Shift <Key>osfInsert:   paste-clipboard()\\n\\
+Alt <Key>>:             end-of-file()\\n\\
+Meta <Key>>:            end-of-file()\\n\\
+Ctrl <Key>e:            end-of-line()\\n\\
+Shift Ctrl <Key>e:      end-of-line(extend)\\n\\
+Ctrl <Key>f:            forward-character()\\n\\
+Alt <Key>]:             forward-paragraph()\\n\\
+Meta <Key>]:            forward-paragraph()\\n\\
+Shift Alt <Key>]:       forward-paragraph(extend)\\n\\
+Shift Meta <Key>]:      forward-paragraph(extend)\\n\\
+Ctrl Alt <Key>f:        forward-word()\\n\\
+Ctrl Meta <Key>f:       forward-word()\\n\\
+Ctrl <Key>d:            kill-next-character()\\n\\
+Alt <Key>BackSpace:     kill-previous-word()\\n\\
+Meta <Key>BackSpace:    kill-previous-word()\\n\\
+Ctrl <Key>w:            key-select() kill-selection()\\n\\
+Ctrl <Key>y:            unkill()\\n\\
+Ctrl <Key>k:            kill-to-end-of-line()\\n\\
+Alt <Key>Delete:        kill-to-start-of-line()\\n\\
+Meta <Key>Delete:       kill-to-start-of-line()\\n\\
+Ctrl <Key>o:            newline-and-backup()\\n\\
+Ctrl <Key>j:            newline-and-indent()\\n\\
+Ctrl <Key>n:            next-line()\\n\\
+Ctrl <Key>osfLeft:      page-left()\\n\\
+Ctrl <Key>osfRight:     page-right()\\n\\
+Ctrl <Key>p:            previous-line()\\n\\
+Ctrl <Key>g:            process-cancel()\\n\\
+Ctrl <Key>l:            redraw-display()\\n\\
+Ctrl <Key>osfDown:      next-page()\\n\\
+Ctrl <Key>osfUp:        previous-page()\\n\\
+Ctrl <Key>space:        set-anchor()\\n
