@@ -1,7 +1,8 @@
 #!/bin/bash
- 
+
+# default font size is 12, can be overriden on command invocation 
 FONTSIZE=${1:-12}
- 
+
 #FONT="xft:IBM Plex Mono Text:pixelsize=$FONTSIZE:antialias=true"
 #FONT="xft:IBM 3270:size=$FONTSIZE:antialias=false"
 FONT="xft:Terminus:size=$FONTSIZE:antialias=false"
